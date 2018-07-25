@@ -1,7 +1,7 @@
 let axios = require ('axios');
 let app = require('express')();
 
-let port = process.envPORT || 5000;
+let port = process.env.PORT || 5000;
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
